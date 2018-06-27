@@ -1,0 +1,283 @@
+  /* PALETA
+  common_red: #951709;
+  middle_red: #7a1109;
+  black_red:  #5e0c08; */
+
+
+  /* FONTS
+  BebasNeue Regular.otf
+  lanenar_-webfont
+  Chunkfive */
+
+  @font-face {
+    font-family: "Lane";
+    src: url('fonts/lanenar_-webfont.woff') format('woff'),
+           url('fonts/lanenar_-webfont.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+  }
+  @font-face {
+     font-family: "Chunkfive";
+     src: url("fonts/chunkfive-webfont.woff") format('woff'),
+          url("fonts/chunkfive-webfont.woff2") format('woff2');
+    }
+  @font-face {
+    font-family: "Bebas";
+    src: url("fonts/bebasneue_regular-webfont.woff") format('woff'),
+         url("fonts/bebasneue_regular-webfont.woff2") format('woff2');
+  }
+
+body{
+  border:0;
+  margin:0;
+  padding:0;
+}
+
+button{
+  background-color: white;
+  border: none;
+  border-radius: .4rem;
+  color: #7a1109;
+  font-family: 'Lane';
+  font-size: 1.5rem;
+  font-weight: 100;
+  height: 3rem;
+  width: 8rem;
+}
+
+nav{
+  background-color: #7a1109;
+  position: relative;
+  vertical-align: middle;
+  padding: .5rem 0;
+}
+
+  nav ul, nav figure{
+    display: inline-block;
+  }
+
+  nav ul{
+    list-style: none;
+    margin-left: 9rem;
+  }
+  nav ul li{
+    display: inline;
+  }
+  nav ul li a{
+    color:white;
+    margin:0 1rem;
+    font-family: 'Lane';
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition:color ease .3s;
+  }
+  nav ul li a:hover{
+    color:rgba(245,245,245,.5);
+  }
+
+  nav figure{
+    background-color: #5e0c08;
+    border-radius: .15rem;
+    padding:1rem;
+    margin:0;
+    margin-left: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  nav figure img{
+    width:8rem;
+  }
+
+.redes{
+  position: absolute;
+  margin:0 2rem;
+  text-align: center;
+  top: 1rem;
+  right: 0;
+  height: 2rem;
+}
+ .redes,section a img,button{
+   transition: transform ease .3s, -webkit-transform ease .3s;
+ }
+.redes:hover, section a img:hover,button:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+.redes a{
+  background-image: url(img/redessociales.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:inline-block;
+  height: 2.5rem;
+  transition: transform ease .3s, -webkit-transform ease .3s;
+  vertical-align: top;
+  width: 2.5rem;
+}
+.redes a:hover{
+  transform: translateY(1rem);
+  -webkit-transform: translateY(1rem);
+}
+.redes a.twitter{ background-position-x: -41px}
+.redes a.instagram{ background-position-x: -82px}
+.redes a.facebook{ background-position-x: -122px}
+.redes a.share{ background-position-x: -163px}
+
+  header{
+    text-align: center;
+  }
+  header img{
+    width: 100%;
+  }
+
+  section,section figure{
+    padding-top: 4rem;
+    text-align: center;
+  }
+
+  section article, section.partB > *{
+    display: inline-block;
+    text-align: center;
+    vertical-align: bottom;
+    width: 48%;
+  }
+  section article img{
+    border: 1rem solid #7a1109;
+  }
+  section article div h1{
+    color: #7a1109;
+    display: inline-block;
+    font-family: 'Lane';
+    font-weight: 100;
+    font-size: 2rem;
+    margin-bottom:1rem;
+    height: auto;
+    text-align: left;
+    width:382px;
+  }
+
+  section.partB{
+    margin: 0rem auto;
+    padding-top: 4rem;
+    width: 90%;
+  }
+  section.partB > *{
+    vertical-align: top;
+    transform: translateY(5px);
+  }
+
+  aside{
+    position: relative;
+    width: 543px;
+    height: 720px;
+  }
+
+  aside svg{
+    position: absolute;
+    bottom: -4rem;
+    right: 0;
+  }
+
+  section.partB hr{
+    background-color: #7a1109;
+    border: none;
+    height: 2.3rem;
+    margin:0;
+    position: relative;
+    width: 100%;
+    z-index: 6;
+  }
+
+  section.partB > div{
+    background-image: url(img/formulario_androide.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(-8px);
+    -webkit-transform: translateY(-8px);
+    padding: 0 2rem;
+    position: relative;
+    height: 820px;
+    width: 420px;
+    z-index: 3;
+  }
+
+  section.partB > div form{
+    color: white;
+    font-family:'Lane';
+    font-weight: 100;
+    text-align: left;
+  }
+
+  section.partB > div form div.consigna{
+    margin-left: 3rem;
+    padding: 4rem 0;
+  }
+
+.consigna h3{
+  font-size: 2rem;
+  font-weight: 100;
+}
+.enviar_base{
+  position: relative;
+}
+
+  form input{
+    background: unset;
+    border: none;
+    border-bottom: 2px solid #951709;
+    color: white;
+    margin-left: -3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 5rem;
+  }
+
+  ::-webkit-input-placeholder,::-moz-placeholder {
+  color: rgba(245,245,245,1);
+  font-family: 'Lane';
+  font-weight: 800;
+}
+::-moz-placeholder {
+  color: rgba(245,245,245,1);
+  font-family: 'Lane';
+  font-weight: 800;
+}
+:-ms-input-placeholder {
+  color: rgba(245,245,245,1);
+  font-family: 'Lane';
+  font-weight: 800;
+}
+:-moz-placeholder {
+  color: rgba(245,245,245,1);
+  font-family: 'Lane';
+  font-weight: 800;
+}
+
+form button{
+  background-color: white;
+  border: none;
+  border-radius: .4rem;
+  color: #7a1109;
+  cursor: pointer;
+  font-family: 'Lane';
+  font-size: 1.5rem;
+  font-weight: 100;
+  height: 3rem;
+  position: absolute;
+  top:4rem;
+  left: 8rem;
+  text-align: left;
+  width: 25rem;
+}
+
+.footerImg img{
+    margin-bottom: -.9rem;
+}
+
+footer{
+  background-color: #7a1109;
+  color: white;
+  font-family: 'Lane';
+  padding:2rem 5rem;
+}
